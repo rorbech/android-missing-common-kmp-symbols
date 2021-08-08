@@ -1,5 +1,5 @@
 plugins {
-    kotlin("multiplatform") version "1.5.20"
+    kotlin("multiplatform") version "1.5.21"
     id("com.android.library")
 }
 
@@ -33,7 +33,6 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation(project(":shared"))
             }
         }
         val commonTest by getting {
