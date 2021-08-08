@@ -1,3 +1,6 @@
+include(":shared")
+rootProject.name = "library"
+
 pluginManagement {
     repositories {
         google()
@@ -8,10 +11,9 @@ pluginManagement {
     resolutionStrategy {
         eachPlugin {
             if (requested.id.namespace == "com.android" || requested.id.name == "kotlin-android-extensions") {
-                useModule("com.android.tools.build:gradle:4.0.1")
+                useModule("com.android.tools.build:gradle:4.1.0")
             }
         }
     }
 }
-rootProject.name = "library"
 
