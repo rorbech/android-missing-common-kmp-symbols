@@ -1,6 +1,6 @@
 plugins {
-    kotlin("multiplatform") version "1.5.21"
     id("com.android.library")
+    id("org.jetbrains.kotlin.multiplatform") version "1.7.10"
 }
 
 group = "org.example"
@@ -8,7 +8,6 @@ version = "1.0-SNAPSHOT"
 
 repositories {
     google()
-    jcenter()
     mavenCentral()
 }
 
